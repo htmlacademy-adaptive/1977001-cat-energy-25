@@ -1,0 +1,68 @@
+
+.program {
+  position: relative;
+  padding: 30px 33px 18px 20px;
+  margin: 20px 0;
+  color: #000000;
+  background-color: $extra-color;
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: $basic-color;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  &--slim::before {
+    background-image: url("/img/cat-slim.svg");
+  }
+}
+
+.program__title {
+  position: relative;
+  margin: 0;
+  padding-left: 30px;
+  padding-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.program__description {
+  @include regular-text;
+  text-align: start;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $line-color;
+}
+
+.program__link {
+  position: relative;
+  display: block;
+  width: fit-content;
+  padding-right: 50px;
+  text-align: start;
+  font-size: 16px;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: url("/img/icons/icon_arrow-short.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover {
+    background-image: url("/img/icons/icon_arrow-long.svg");
+  }
+}

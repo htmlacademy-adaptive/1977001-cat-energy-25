@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+$title-font: "Oswald", sans-serif;
+$regular-font: "Arial", sans-serif;
+
+@mixin regular-text {
+  font-family: $regular-font;
+  font-size: 14px;
+  color: $extra-dark-color;
+}

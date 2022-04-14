@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  padding: 12px 0;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+
+  background-color: $basic-color;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-optional-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--secondary {
+    background-color: $extra-color;
+  }
+}

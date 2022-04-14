@@ -1,0 +1,38 @@
+.details {
+  padding-top: 20px;
+  padding-bottom: 29px;
+}
+
+.details__list {
+  @include regular-text;
+  padding: 0;
+  margin: 0;
+}
+
+.details__item {
+  position: relative;
+  list-style-type: none;
+  margin-left: 70px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -74px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-position: center center;
+    background-color: $basic-color;
+  }
+}
+
+.details__item--healthy::before {
+  background-image: url("/img/icons/icon_leaf.svg");
+  background-repeat: no-repeat;
+}
+
+.details__title {
+  margin-bottom: 40px;
+}

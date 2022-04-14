@@ -1,0 +1,25 @@
+.contacts__container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  padding: 26px 20px;
+}
+
+.contacts__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts__location {
+  @include regular-text;
+  width: fit-content;
+}
+
+.contacts__map-container {
+  width: 320px;
+  height: 362px;
+}

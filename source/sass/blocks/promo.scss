@@ -1,0 +1,19 @@
+.promo {
+  position: relative;
+  width: 320px;
+  text-align: center;
+  color: #ffffff;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/cat-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 302px;
+}
+
+.promo__title {
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.promo__slogan {
+  padding-bottom: 29px;
+  text-transform: uppercase;
+}

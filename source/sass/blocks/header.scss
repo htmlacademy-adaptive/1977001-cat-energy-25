@@ -1,0 +1,22 @@
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav-toggle {
+height: 16px;
+width: 24px;
+}
+
+.header__nav {
+  position: absolute;
+}
+
+.header__nav--closed{
+  display: none;
+}
+
+.header__logo-text {
+  padding: 24px 0;
+}
