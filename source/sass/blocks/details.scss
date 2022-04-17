@@ -1,30 +1,21 @@
 .details {
   padding-top: 20px;
-  padding-bottom: 29px;
+  padding-bottom: 49px;
 }
 
 .details__list {
-  @include regular-text;
   padding: 0;
   margin: 0;
 }
 
 .details__item {
-  position: relative;
-  list-style-type: none;
-  margin-left: 70px;
-  margin-bottom: 20px;
-
   &::before {
     content: "";
-    position: absolute;
-    top: -3px;
-    left: -74px;
     display: block;
     width: 60px;
     height: 60px;
+    background-color: $basic-green;
     background-position: center center;
-    background-color: $basic-color;
   }
 }
 
@@ -34,5 +25,6 @@
 }
 
 .details__title {
+  margin: 0;
   margin-bottom: 40px;
 }

@@ -2,11 +2,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
 
-.social__item:not(:last-child) {
+.social__item {
   margin-right: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

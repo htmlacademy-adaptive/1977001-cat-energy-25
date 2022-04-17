@@ -2,9 +2,13 @@
 .program {
   position: relative;
   padding: 30px 33px 18px 20px;
-  margin: 20px 0;
-  color: #000000;
-  background-color: $extra-color;
+  margin-bottom: 20px;
+  color: $basic-black;
+  background-color: $basic-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     display: block;
@@ -14,7 +18,7 @@
     content: "";
     background-repeat: no-repeat;
     background-position: left center;
-    background-color: $basic-color;
+    background-color: $basic-green;
     width: 50px;
     height: 50px;
     margin: 0 auto;
@@ -28,41 +32,26 @@
 
 .program__title {
   position: relative;
-  margin: 0;
   padding-left: 30px;
-  padding-bottom: 29px;
-  font-size: 24px;
+  margin-bottom: 29px;
   line-height: 37px;
-  font-weight: 400;
   text-transform: uppercase;
 }
 
 .program__description {
-  @include regular-text;
-  text-align: start;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: left;
   padding-bottom: 23px;
   border-bottom: 1px solid $line-color;
 }
 
 .program__link {
-  position: relative;
-  display: block;
-  width: fit-content;
-  padding-right: 50px;
-  text-align: start;
-  font-size: 16px;
+  display: flex;
   color: inherit;
   text-transform: uppercase;
-  text-decoration: none;
-  background-image: url("/img/icons/icon_arrow-short.svg");
-  background-repeat: no-repeat;
-  background-position: right;
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
-
-  &:hover {
-    background-image: url("/img/icons/icon_arrow-long.svg");
+    color: rgba($basic-black, 0.3);
   }
 }

@@ -4,13 +4,14 @@
 
 .footer__logo {
   text-align: center;
-  margin-top: 39px;
   margin-bottom: 32px;
 }
 
 .footer__container {
   display: flex;
   flex-direction: column;
+  padding-top: 39px;
+  padding-bottom: 22px;
 }
 
 .footer__social {
@@ -18,7 +19,7 @@
 }
 
 .footer__copyright {
-  padding: 22px 0;
+  padding-top: 22px;
 }
 
 .footer__container div {

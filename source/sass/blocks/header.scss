@@ -1,5 +1,6 @@
-.header__wrapper {
+.header__container {
   display: flex;
+  padding: 0 20px;
   justify-content: space-between;
   align-items: center;
 }
@@ -10,11 +11,13 @@
 }
 
 .header__nav {
+  display: none;
   position: absolute;
+  z-index: 1;
 }
 
-.header__nav--closed {
-  display: none;
+.header__nav--opened {
+  display: flex;
 }
 
 .header__logo-text {
