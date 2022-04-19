@@ -1,0 +1,21 @@
+.show-more {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  align-items: center;
+}
+
+.show-more__icon {
+  margin-bottom: 23px;
+}
+
+.show-more__title {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.show-more__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+}

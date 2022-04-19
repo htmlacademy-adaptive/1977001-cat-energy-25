@@ -2,15 +2,16 @@
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
+
+  &--colored {
+    background-color: $basic-gray;
+  }
 }
 
 .contacts__title {
   margin: 0;
-  font-family: $custom-font;
-  font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .contacts__location {

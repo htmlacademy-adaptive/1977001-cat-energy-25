@@ -1,0 +1,21 @@
+.product-extra {
+  border-top: 1px solid $line-color;
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  &:last-child {
+    border-bottom: 1px solid $line-color;
+  }
+}
+
+.product-extra__title {
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  line-height: 16px;
+}
+
+.product-extra__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}

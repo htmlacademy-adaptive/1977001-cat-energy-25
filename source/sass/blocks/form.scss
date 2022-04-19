@@ -1,0 +1,59 @@
+.form__group {
+  padding: 0 20px;
+  border: none;
+
+  &--bordered {
+    border-bottom: 1px solid $line-color;
+  }
+
+  &--bio {
+    padding-bottom: 27px;
+  }
+
+  &--needs {
+    padding-top: 22px;
+    padding-bottom: 20px;
+  }
+
+  &--contacts {
+    margin-top: 26px;
+    padding-top: 17px;
+    padding-bottom: 25px;
+  }
+
+  &--contacts legend {
+    margin-bottom: 18px;
+  }
+
+  &--comment {
+    padding-bottom: 20px;
+  }
+
+  &--comment legend {
+    padding-top: 0;
+    margin-bottom: 36px;
+  }
+}
+
+.form__title {
+  margin-bottom: 34px;
+  line-height: 26px;
+}
+
+.form__radio-item {
+  color: $default-color;
+}
+
+.form__submit-container {
+  padding: 0 20px 32px;
+  text-align: center;
+}
+
+.form__radio-item,
+.form__checkbox {
+  margin-bottom: 12px;
+}
+
+.form__button {
+  margin-bottom: 21px;
+}
