@@ -30,14 +30,14 @@
 
   &--secondary {
     background-color: $basic-gray;
-    color: $basic-black;
-  }
+    color: $default-color;
 
-  &--secondary:hover {
-    background-color: $style-gray-100;
-  }
+    &:hover {
+      background-color: $style-gray-100;
+    }
 
-  &--secondary:active {
-    color: rgba($style-gray-500, 0.3);
+    &:active {
+      color: rgba($style-gray-500, 0.3);
+    }
   }
 }

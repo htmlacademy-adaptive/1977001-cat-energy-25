@@ -3,22 +3,4 @@
   font-family: $custom-font;
   font-weight: 400;
   color: $basic-black;
-
-  &--large {
-    font-size: 36px;
-    line-height: 36px;
-  }
-
-  &--medium {
-    font-size: 24px;
-  }
-
-  &--small {
-    font-size: 16px;
-  }
-
-  &--small-up {
-    font-size: 16px;
-    text-transform: uppercase;
-  }
 }

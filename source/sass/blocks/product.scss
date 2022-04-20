@@ -5,9 +5,10 @@
 }
 
 .product__title {
-  text-transform: uppercase;
   width: 80px;
   margin-bottom: 18px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .product__image-link {
@@ -24,4 +25,5 @@
 
 .product__button {
   grid-column: 1 / -1;
+  line-height: 20px;
 }
