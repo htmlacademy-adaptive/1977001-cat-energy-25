@@ -1,0 +1,23 @@
+.details-list {
+  display: flex;
+  margin: 0;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.details-list__item {
+  width: 124px;
+}
+
+.details-list__name {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.details-list__value {
+  padding-bottom: 7px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}

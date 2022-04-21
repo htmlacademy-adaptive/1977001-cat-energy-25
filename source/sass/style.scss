@@ -1,1 +1,40 @@
-// Начните писать стили здесь
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "blocks/button.scss";
+@import "blocks/title.scss";
+@import "blocks/case.scss";
+@import "blocks/catalog-extra.scss";
+@import "blocks/catalog-page.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/contacts.scss";
+@import "blocks/container.scss";
+@import "blocks/copyright.scss";
+@import "blocks/details.scss";
+@import "blocks/details-list.scss";
+@import "blocks/footer.scss";
+@import "blocks/form.scss";
+@import "blocks/form-page.scss";
+@import "blocks/gift.scss";
+@import "blocks/header.scss";
+@import "blocks/list-reset.scss";
+@import "blocks/main-container.scss";
+@import "blocks/page.scss";
+@import "blocks/program.scss";
+@import "blocks/product.scss";
+@import "blocks/product-extra.scss";
+@import "blocks/products-list.scss";
+@import "blocks/promo.scss";
+@import "blocks/radio-input.scss";
+@import "blocks/show-more.scss";
+@import "blocks/site-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/social.scss";
+@import "blocks/stats.scss";
+@import "blocks/text-field.scss";
+@import "blocks/visually-hidden.scss";
+
+@mixin regular-text {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+}

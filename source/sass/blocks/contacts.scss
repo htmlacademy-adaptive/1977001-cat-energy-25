@@ -1,0 +1,26 @@
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 20px;
+
+  &--colored {
+    background-color: $basic-gray;
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contacts__location {
+  width: fit-content;
+}
+
+.contacts__map-container {
+  height: 362px;
+  text-align: center;
+}

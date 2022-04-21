@@ -1,0 +1,26 @@
+
+.case {
+  background-color: $style-gray-200;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.case__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.case__text {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.case__summary {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

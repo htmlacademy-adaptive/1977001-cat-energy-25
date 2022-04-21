@@ -1,0 +1,59 @@
+
+.program {
+  position: relative;
+  padding: 30px 33px 18px 20px;
+  margin-bottom: 20px;
+  color: $basic-black;
+  background-color: $basic-gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    content: "";
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: $basic-green;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
+  &--slim::before {
+    background-image: url("/img/cat-slim.svg");
+  }
+}
+
+.program__title {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 29px;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__description {
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: left;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $line-color;
+}
+
+.program__link {
+  display: flex;
+  color: inherit;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  &:active {
+    color: rgba($basic-black, 0.3);
+  }
+}

@@ -1,0 +1,21 @@
+.radio-input {
+  position: relative;
+}
+
+.radio-input__label {
+  padding-left: 45px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $style-gray-600;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $style-gray-400;
+    border-radius: 50%;
+  }
+}

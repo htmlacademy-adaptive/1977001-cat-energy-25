@@ -1,0 +1,29 @@
+.promo {
+  position: relative;
+  padding-top: 27px;
+  text-align: center;
+  color: $basic-white;
+  background-image: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)), url("/img/cat-background-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto 302px;
+}
+
+.promo__title {
+  margin-bottom: 25px;
+  color: $basic-white;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+  font-family: $custom-font;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  margin-bottom: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,43 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 15px;
+
+  font-family: $custom-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic-white;
+  text-transform: uppercase;
+
+  background-color: $basic-green;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $style-green;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--secondary {
+    background-color: $basic-gray;
+    color: $default-color;
+
+    &:hover {
+      background-color: $style-gray-100;
+    }
+
+    &:active {
+      color: rgba($style-gray-500, 0.3);
+    }
+  }
+}
