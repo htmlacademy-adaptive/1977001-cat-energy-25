@@ -5,14 +5,23 @@
   justify-content: space-between;
 }
 
+
 .details-list__item {
   width: 124px;
 }
 
 .details-list__name {
+  width: min-content;
+  margin: 0 auto;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    width: max-content;
+  }
 }
 
 .details-list__value {
@@ -20,4 +29,10 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }

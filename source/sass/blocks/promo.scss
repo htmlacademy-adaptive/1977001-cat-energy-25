@@ -1,19 +1,46 @@
 .promo {
-  position: relative;
   padding-top: 27px;
-  text-align: center;
   color: $basic-white;
   background-image: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)), url("/img/cat-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto 302px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    color: $basic-black;
+  }
+}
+
+.promo__container {
+  text-align: center;
+  position: relative;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 709px;
+    margin-left: 87px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
 }
 
 .promo__title {
+  margin: 0;
   margin-bottom: 25px;
-  color: $basic-white;
+  font-family: $custom-font;
   font-size: 36px;
+  font-weight: normal;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 42px;
+  }
 }
 
 .promo__slogan {
@@ -21,9 +48,34 @@
   margin-bottom: 29px;
   font-family: $custom-font;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.promo__programs {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+    row-gap: 80px;
+  }
 }
 
 .promo__button {
   margin-bottom: 20px;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    position: absolute;
+    left: 25px;
+    top: 230px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 27px;
+  }
 }

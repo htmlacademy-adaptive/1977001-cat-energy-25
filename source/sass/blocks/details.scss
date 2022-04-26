@@ -1,6 +1,31 @@
 .details {
   padding-top: 20px;
   padding-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid $style-gray-300;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 26px;
+    border-bottom: none;
+  }
+}
+
+.details__list {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 79px;
+  }
 }
 
 .details__item {
@@ -17,6 +42,10 @@
     background-image: url("/img/icons/icon_leaf.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+  }
 }
 
 .details__title {
@@ -24,4 +53,16 @@
   margin-bottom: 40px;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+}
+
+.details__text {
+  @media (min-width: $tablet-width) {
+    line-height: 24px;
+  }
 }
