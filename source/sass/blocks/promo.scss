@@ -15,16 +15,17 @@
 .promo__container {
   text-align: center;
   position: relative;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    max-width: 709px;
-    margin-left: 87px;
+    padding-left: 87px;
     text-align: left;
+    padding-bottom: 500px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 88px;
+    padding-left: 80px;
+    padding-bottom: 162px;
   }
 }
 
@@ -52,7 +53,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 47px;
   }
 }
 
@@ -68,14 +69,33 @@
 .promo__button {
   margin-bottom: 20px;
   font-size: 14px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: auto;
-    position: absolute;
-    left: 25px;
-    top: 230px;
+    position: relative;
     font-size: 20px;
     line-height: 20px;
     padding: 17px 27px;
+  }
+}
+
+.promo__image {
+  width: 280px;
+  height: 270px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    left: 35px;
+    top: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    left: 470px;
+    top: -82px;
   }
 }

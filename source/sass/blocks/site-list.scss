@@ -26,16 +26,19 @@
     margin-right: 34px;
 
     &:last-child {
-      margin-right: none;
+      margin-right: 0;
     }
 
-    &--active {
+    &--active,
+    &--active-index {
       border-bottom: 2px solid $basic-green;
       pointer-events: none;
     }
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+
     &--active-index {
       border-bottom: 2px solid $basic-white;
       pointer-events: none;

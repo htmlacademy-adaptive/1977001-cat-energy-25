@@ -3,6 +3,10 @@
   margin: 0;
   margin-bottom: 40px;
   justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
+  }
 }
 
 
