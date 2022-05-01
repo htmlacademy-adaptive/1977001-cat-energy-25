@@ -3,25 +3,50 @@
   background-color: $background-color;
 }
 
+.footer__container {
+  padding-top: 39px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-top: 58px;
+    padding-bottom: 55px;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .footer__logo {
   display: block;
   margin-bottom: 32px;
   text-align: center;
-}
 
-.footer__container {
-  padding-top: 39px;
-  padding-bottom: 22px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .footer__social {
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer__copyright {
   padding-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .footer__container div {
   border-top: 1px solid $line-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
