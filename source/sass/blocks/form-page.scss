@@ -6,6 +6,12 @@
   margin-bottom: 37px;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form-page__text {
@@ -14,4 +20,10 @@
   font-family: $custom-font;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
