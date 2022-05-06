@@ -1,5 +1,9 @@
 .form-page {
   padding-top: 27px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .form-page__title {

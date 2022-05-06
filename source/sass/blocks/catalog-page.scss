@@ -1,14 +1,32 @@
 .catalog-page {
   padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .catalog-page__title {
   margin-bottom: 41px;
-  padding: 0 20px;
   font-size: 36px;
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
     font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.catalog-page__list-container {
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    margin: 0 auto;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+    padding: 0 110px;
   }
 }

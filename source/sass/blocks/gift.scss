@@ -1,20 +1,57 @@
 .gift {
   height: 289px;
-  margin-bottom: 35px;
-  padding: 59px 60px 43px;
+  margin: 0 auto;
+  max-width: 707px;
+  padding-top: 59px;
   color: $basic-white;
   background-image: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)), url("/img/gift-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 279px 289px;
+
+  @media (min-width: $tablet-width) {
+    height: 200px;
+    background-image: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)), url("/img/gift-background-tablet.jpg");
+    background-size: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 289px;
+    margin: 0;
+    width: 245px;
+    background-image: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)), url("/img/gift-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: 279px 289px;
+  }
 }
 
 .gift__container {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-left: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding: 0;
+  }
 }
 
 .gift__image {
   margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-right: 265px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 48px;
+    padding: 0;
+  }
 }
 
 .gift__text {
