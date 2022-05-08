@@ -8,8 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
-    padding: 0 110px;
+    max-width: $desktop-width;
   }
 
   &--form {

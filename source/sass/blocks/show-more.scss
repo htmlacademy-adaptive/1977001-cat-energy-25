@@ -48,3 +48,9 @@
     line-height: 18px;
   }
 }
+
+.show-more__button {
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
+}
