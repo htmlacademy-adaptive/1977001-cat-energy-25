@@ -45,55 +45,44 @@
       <p class="form-page__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
     </div>
 
-    <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-
-      <div class="form__union">
-        <div class="container container--form-union">
-          <fieldset class="form__group form__group--bio">
-            <legend class="visually-hidden">Данные питомца</legend>
-            <p class="form__field text-field">
-              <label class="text-field__label title" for="name">Имя:*</label>
-              <input class="text-field__input title" type="text" id="name" name="name" placeholder="Имя кота"
-                value="Барсик" required>
-            </p>
-            <p class="form__field text-field">
-              <label class="text-field__label title" for="weight">Вес (кг.):*</label>
-              <input class="text-field__input title" type="number" min="1" id="weight" name="weight"
-                placeholder="Вес кота" value="7" required>
-            </p>
-            <p class="form__field text-field">
-              <label class="text-field__label title" for="age">Возраст (лет):</label>
-              <input class="text-field__input title" type="number" min="1" id="age" name="age"
-                placeholder="Возраст кота" value="7">
-            </p>
-
-          </fieldset>
-        </div>
-        <div class="form__needs-container">
-          <fieldset class="form__group form__group--needs form__group--bordered">
-            <legend class="visually-hidden">Потребности питомца</legend>
-            <ul class="list-reset form__radio-list">
-              <li class="form__radio-item radio-input">
-                <input class="visually-hidden radio-input__control" type="radio" id="diet" name="needs" value="diet"
-                  checked>
-                <label class="radio-input__label title" for="diet">Похудение</label>
-              </li>
-              <li class="form__radio-item radio-input">
-                <input class="visually-hidden radio-input__control" type="radio" id="gain" name="needs" value="gain">
-                <label class="radio-input__label title" for="gain">Набор массы</label>
-              </li>
-              <li class="form__radio-item radio-input">
-                <input class="visually-hidden radio-input__control" type="radio" id="advice" name="needs"
-                  value="advice">
-                <label class="radio-input__label title" for="advice">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-
-          </fieldset>
-        </div>
-      </div>
-
-      <div class="container container--form">
+    <div class="container container--form">
+      <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form__group form__group--bio">
+          <legend class="visually-hidden">Данные питомца</legend>
+          <p class="form__field text-field">
+            <label class="text-field__label title" for="name">Имя:*</label>
+            <input class="text-field__input title" type="text" id="name" name="name" placeholder="Имя кота"
+              value="Барсик" required>
+          </p>
+          <p class="form__field text-field">
+            <label class="text-field__label title" for="weight">Вес (кг.):*</label>
+            <input class="text-field__input title" type="number" min="1" id="weight" name="weight"
+              placeholder="Вес кота" value="7" required>
+          </p>
+          <p class="form__field text-field">
+            <label class="text-field__label title" for="age">Возраст (лет):</label>
+            <input class="text-field__input title" type="number" min="1" id="age" name="age" placeholder="Возраст кота"
+              value="7">
+          </p>
+        </fieldset>
+        <fieldset class="form__group form__group--needs form__group--bordered">
+          <legend class="visually-hidden">Потребности питомца</legend>
+          <ul class="list-reset form__radio-list">
+            <li class="form__radio-item radio-input">
+              <input class="visually-hidden radio-input__control" type="radio" id="diet" name="needs" value="diet"
+                checked>
+              <label class="radio-input__label title" for="diet">Похудение</label>
+            </li>
+            <li class="form__radio-item radio-input">
+              <input class="visually-hidden radio-input__control" type="radio" id="gain" name="needs" value="gain">
+              <label class="radio-input__label title" for="gain">Набор массы</label>
+            </li>
+            <li class="form__radio-item radio-input">
+              <input class="visually-hidden radio-input__control" type="radio" id="advice" name="needs" value="advice">
+              <label class="radio-input__label title" for="advice">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </fieldset>
         <fieldset class="form__group form__group--contacts">
           <legend class="form__title form__title--contacts title">Контактные данные (владельца&#160;кота)</legend>
           <div class="form__union form__union--contacts">
@@ -109,9 +98,6 @@
             </p>
           </div>
         </fieldset>
-      </div>
-
-      <div class="container container--form">
         <fieldset class="form__group form__group--comment">
           <legend class="form__title form__title--comment title">Комментарий</legend>
           <p class="form__field text-field text-field--textarea">
@@ -121,9 +107,6 @@
           </textarea>
           </p>
         </fieldset>
-      </div>
-
-      <div class="container container--form">
         <fieldset class="form__group form__group--extra">
           <legend class="form__title form__title--extra title">Дополнительно</legend>
           <ul class="form__checkboxes list-reset">
@@ -157,14 +140,12 @@
             </li>
           </ul>
         </fieldset>
-      </div>
-
-      <div class="form__submit-container container container--form">
-        <button class="form__button button button--full-width" type="submit">Отправить заявку</button>
-        <span>* — Обязательные поля</span>
-      </div>
-    </form>
-
+        <div class="form__submit-container">
+          <button class="form__button button button--full-width" type="submit">Отправить заявку</button>
+          <span class="form__note">* — Обязательные поля</span>
+        </div>
+      </form>
+    </div>
     <section class="contacts contacts--colored">
       <div class="container container--form">
         <div class="contacts__container contacts__container--form">
