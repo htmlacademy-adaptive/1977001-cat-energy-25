@@ -13,6 +13,12 @@
     padding: 57px 110px 0;
     margin-bottom: 89px;
   }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 65px;
+    }
+  }
 }
 
 .header__container {

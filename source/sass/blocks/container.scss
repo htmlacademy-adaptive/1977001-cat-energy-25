@@ -11,4 +11,25 @@
     max-width: 1440px;
     padding: 0 110px;
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding: 0 69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 110px;
+    }
+  }
+
+  &--form-union {
+    @media (min-width: $tablet-width) {
+      padding: 0 69px;
+      width: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
 }

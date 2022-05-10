@@ -1,4 +1,19 @@
 .stats__item {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 9px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid $line-color;
+    letter-spacing: -1.1px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.stats__value {
+  margin: 0;
 }
