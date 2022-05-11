@@ -8,8 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
-    padding: 0 110px;
+    max-width: $desktop-width;
   }
 
   &--form {
@@ -18,18 +17,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0 110px;
-    }
-  }
-
-  &--form-union {
-    @media (min-width: $tablet-width) {
-      padding: 0 69px;
-      width: 100%;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding: 0;
+      padding: 0 30px;
     }
   }
 }

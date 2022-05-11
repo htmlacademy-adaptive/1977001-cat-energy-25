@@ -61,4 +61,8 @@
 .product__button {
   grid-column: 1 / -1;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }

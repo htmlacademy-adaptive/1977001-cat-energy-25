@@ -1,7 +1,10 @@
 .product-extra {
+  display: flex;
+  flex-wrap: wrap;
   border-top: 1px solid $line-color;
   padding-top: 13px;
   padding-bottom: 19px;
+  align-items: baseline;
 
   &:last-child {
     border-bottom: 1px solid $line-color;
@@ -14,58 +17,26 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
     padding: 16px 0;
+    align-items: center;
     border-left: none;
     border-right: none;
   }
 }
 
-.product-extra__wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    margin-bottom: 0;
-  }
-}
-
 .product-extra__title {
+  width: 100%;
   margin-bottom: 13px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    width: auto;
+    margin: 0;
+    margin-right: auto;
     font-size: 20px;
     line-height: 20px;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: auto;
-  }
-}
-
-.product-extra__stats {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-right: 38px;
   }
 }
 
@@ -73,13 +44,36 @@
   @media (min-width: $tablet-width) {
     margin-right: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin-right: 0;
+  }
+}
+
+.product-extra__stats-value {
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 38px;
+  }
 }
 
 .product-extra__button {
   width: 100%;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 21px;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
+    max-width: 245px;
+    margin-top: 0;
     flex-shrink: 0;
   }
 }

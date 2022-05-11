@@ -4,19 +4,19 @@
   border-bottom: 1px solid $line-color;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 36px;
-    padding: 24px 30px 0;
+    padding: 24px 30px 64px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 57px 110px 0;
-    margin-bottom: 89px;
+    padding-top: 57px;
+    padding-bottom: 74px;
   }
 
-  &--catalog {
-    @media (min-width: $tablet-width) {
-      margin-bottom: 65px;
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 111px;
     }
   }
 }
@@ -57,17 +57,78 @@
 }
 
 .header__nav-toggle {
-  height: 16px;
+  position: relative;
+  height: 30px;
   width: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__nav-toggle--open {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 24px;
+    height: 1px;
+    background-color: $basic-black;
+    box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+  }
+
+  &:hover::before {
+    background-color: rgba($basic-black, 0.6);
+    box-shadow:
+      0 8px 0 0 rgba($basic-black, 0.6),
+      0 16px 0 0 rgba($basic-black, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba($basic-black, 0.3);
+    box-shadow:
+      0 8px 0 0 rgba($basic-black, 0.3),
+      0 16px 0 0 rgba($basic-black, 0.3);
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.header__nav-toggle--close {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 24px;
+    height: 1px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: rgba($basic-black, 0.6);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba($basic-black, 0.3);
+  }
+}
+
 .header__nav {
-  display: none;
-  position: relative;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
@@ -79,7 +140,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 66px;
   bottom: auto;
 
   @media (min-width: $tablet-width) {
@@ -90,4 +151,8 @@
 
 .header__nav--opened {
   display: flex;
+}
+
+.header__nav--closed {
+  display: none;
 }
