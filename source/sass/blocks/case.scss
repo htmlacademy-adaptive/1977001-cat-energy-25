@@ -1,5 +1,5 @@
 .case {
-  background-color: $style-gray-200;
+  background-color: $background-color;
   padding-top: 25px;
   padding-bottom: 40px;
 
@@ -22,6 +22,7 @@
   line-height: 36px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 63px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -70,6 +71,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0;
+  }
+
+  &--title {
+    font-size: 14px;
   }
 }
 

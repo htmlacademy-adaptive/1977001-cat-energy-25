@@ -17,24 +17,97 @@
     &:last-child {
       margin-bottom: 0;
     }
+
+    &--slim::after {
+      content: url("/img/cat-slim-tablet.svg");
+      position: absolute;
+      width: 200px;
+      height: 211px;
+      top: 75px;
+      right: 60px;
+    }
+
+    &--pro::after {
+      content: url("/img/cat-pro-tablet.svg");
+      position: absolute;
+      width: 268px;
+      height: 200px;
+      top: 91px;
+      right: 28px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 0;
+    padding-top: 41px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 .program__title {
-  position: relative;
-  padding-left: 30px;
+  display: flex;
   margin-bottom: 29px;
+  align-items: center;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
 
+  &--slim {
+    &::before {
+      content: url("/img/cat-slim.svg");
+      width: 50px;
+      height: 53px;
+      margin-right: 19px;
+    }
+  }
+
+  &--pro {
+    &::before {
+      content: url("/img/cat-pro.svg");
+      width: 67px;
+      height: 50px;
+      margin-right: 11px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+
+    &--slim {
+      &::before {
+        display: block;
+        content: url("/img/cat-slim-desktop.svg");
+        width: 100px;
+        height: 106px;
+        margin-right: 62px;
+      }
+    }
+
+    &--pro {
+      &::before {
+        display: block;
+        content: url("/img/cat-pro-desktop.svg");
+        width: 134px;
+        height: 100px;
+        margin-top: 5px;
+        margin-right: 45px;
+        margin-left: -20px;
+      }
+    }
   }
 }
 
@@ -46,14 +119,17 @@
   border-bottom: 1px solid $line-color;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    min-width: 330px;
+    margin-right: 316px;
     margin-bottom: 56px;
+    padding: 0;
     line-height: 24px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
+    margin-bottom: 23px;
+    margin-right: 0;
   }
 }
 
@@ -93,5 +169,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: auto;
   }
 }

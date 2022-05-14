@@ -4,22 +4,25 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 45px;
-    padding-bottom: 47px;
+    padding-bottom: 63px;
     border-bottom: 1px solid $style-gray-300;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 74px;
     padding-bottom: 26px;
     border-bottom: none;
   }
 }
 
 .details__list {
+  counter-reset: details;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 153px;
-    row-gap: 37px;
+    column-gap: 59px;
+    row-gap: 96px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,13 +32,24 @@
 }
 
 .details__item {
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  counter-increment: details;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &::before {
     content: "";
-    display: block;
+    position: relative;
     width: 60px;
     height: 60px;
     background-color: $basic-green;
     background-position: center center;
+    flex-shrink: 0;
   }
 
   &--healthy::before {
@@ -43,8 +57,47 @@
     background-repeat: no-repeat;
   }
 
+  &--fast::before {
+    background-image: url("/img/icons/icon_tub.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--complete::before {
+    background-image: url("/img/icons/icon_eat.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--quick::before {
+    background-image: url("/img/icons/icon_alarm.svg");
+    background-repeat: no-repeat;
+  }
+
   @media (min-width: $tablet-width) {
-    line-height: 24px;
+    margin-bottom: 63px;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:last-child {
+      margin-bottom: 63px;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+
+    &::after {
+      content: counter(details);
+      position: absolute;
+      font-family: $custom-font;
+      font-size: 280px;
+      line-height: 1;
+      color: $basic-gray;
+      z-index: -1;
+      top: -37px;
+      left: 117px;
+    }
   }
 }
 
@@ -62,7 +115,11 @@
 }
 
 .details__text {
+  margin-left: 20px;
+
   @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-top: 31px;
     line-height: 24px;
   }
 }

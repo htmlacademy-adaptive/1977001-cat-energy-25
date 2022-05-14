@@ -4,6 +4,17 @@
   &--colored {
     background-color: $basic-gray;
   }
+
+  iframe {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 362px;
+
+    @media (min-width: $tablet-width) {
+      height: 400px;
+    }
+  }
 }
 
 .contacts__container {
@@ -18,7 +29,6 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 98px;
-    left: 110px;
     width: 565px;
     padding: 56px 80px;
     background-color: $basic-white;
@@ -80,14 +90,5 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     float: left;
-  }
-}
-
-.contacts__map-container {
-  height: 362px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    height: 400px;
   }
 }
