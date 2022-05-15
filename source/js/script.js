@@ -1,7 +1,5 @@
-console.log('connected');
-
-let navHeader = document.querySelector('.header__nav');
-let navToggle = document.querySelector('.header__nav-toggle');
+const navHeader = document.querySelector('.header__nav');
+const navToggle = document.querySelector('.header__nav-toggle');
 
 navHeader.classList.remove('header__nav--nojs');
 

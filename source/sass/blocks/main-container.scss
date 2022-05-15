@@ -4,13 +4,13 @@
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
-      display: block;
       position: absolute;
       top: 0;
       left: 50%;
-      background-image: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)), url("/img/cat-background-desktop.jpg");
+      background-image: url("/img/cat-bg-desktop.jpg"), linear-gradient(#64a73c, #64a73c);
       background-repeat: no-repeat;
-      width: 720px;
+      background-position: right center, center;
+      width: 50%;
       height: 694px;
     }
   }

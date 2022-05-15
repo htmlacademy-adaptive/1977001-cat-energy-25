@@ -18,10 +18,10 @@
 
 .site-list__item {
   padding: 22px 20px 24px;
-  border-bottom: 1px solid $style-gray-300;
+  border-top: 1px solid $style-gray-300;
 
   @media (min-width: $tablet-width) {
-    border-bottom: none;
+    border-top: none;
     padding: 10px 0;
     margin-right: 34px;
 
@@ -47,6 +47,10 @@
 }
 
 .site-list__link {
+  @media (max-width: $tablet-width) {
+    font-weight: 500;
+  }
+
   &--index {
     @media (min-width: $desktop-width) {
       color: $basic-white;

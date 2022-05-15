@@ -1,7 +1,7 @@
 .header {
+  position: relative;
   width: 100%;
   padding: 10px 20px 18px;
-  border-bottom: 1px solid $line-color;
 
   @media (min-width: $tablet-width) {
     padding: 24px 30px 64px;
@@ -156,11 +156,12 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 66px;
-  bottom: auto;
+  top: 100%;
 
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
   }
 }
