@@ -1,14 +1,19 @@
 .promo {
   padding-top: 27px;
   color: $basic-white;
-  background-image: linear-gradient(rgba($basic-green, 0.85), rgba($basic-green, 0.85)), url("/img/cat-background-mobile.jpg");
+  background-image: url("/img/cat-bg-mobile.jpg"), linear-gradient(to right, $background-green-start, $background-green-end);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: auto 302px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     background: none;
     color: $basic-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 40px;
   }
 }
 
@@ -18,14 +23,14 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 87px;
-    text-align: left;
     padding-bottom: 500px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 88px;
     padding-left: 80px;
-    padding-bottom: 162px;
+    padding-bottom: 168px;
   }
 }
 
@@ -87,8 +92,8 @@
     position: absolute;
     width: 709px;
     height: 609px;
-    left: 35px;
-    top: 202px;
+    left: 30px;
+    bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

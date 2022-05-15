@@ -1,13 +1,19 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-}
-
-.copyright__link {
-  color: inherit;
+  align-items: center;
 }
 
 .copyright__text {
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-right: 22px;
+  }
+}
+
+.copyright__link {
+  color: inherit;
 }

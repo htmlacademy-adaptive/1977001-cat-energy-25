@@ -1,3 +1,17 @@
 .main-container {
   flex-grow: 1;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-image: url("/img/cat-bg-desktop.jpg"), linear-gradient(#64a73c, #64a73c);
+      background-repeat: no-repeat;
+      background-position: right center, center;
+      width: 50%;
+      height: 694px;
+    }
+  }
 }
