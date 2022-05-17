@@ -150,6 +150,10 @@
       display: block;
     }
   }
+
+  &--nojs {
+    display: flex;
+  }
 }
 
 .header__nav-list {

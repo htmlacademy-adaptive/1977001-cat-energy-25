@@ -1,22 +1,23 @@
-.radio-input {
-  position: relative;
-}
-
 .radio-input__label {
-  padding-left: 45px;
+  position: relative;
+  display: block;
+  padding: 9px 0 9px 45px;
   font-size: 16px;
   text-transform: uppercase;
   color: $style-gray-600;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 22px;
+    padding-left: 59px;
   }
 
   &::before {
     content: "";
     position: absolute;
     left: 0;
-    display: inline-block;
+    top: 0;
     width: 30px;
     height: 30px;
     border: 1px solid $style-gray-400;
@@ -26,5 +27,28 @@
       width: 40px;
       height: 40px;
     }
+  }
+}
+
+.radio-input__control {
+  &:focus-visible + .radio-input__label {
+    outline: 2px solid $focus-color;
+    outline-offset: 2px;
+  }
+
+  &:hover + .radio-input__label::before {
+    border: 1px solid $style-gray-hover;
+  }
+
+  &:checked + .radio-input__label::before {
+    background-image: url("/img/radiobutton-checked.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+  }
+
+  &:disabled + .radio-input__label {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }
