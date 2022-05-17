@@ -18,13 +18,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 30px;
-  }
-
-  &--email {
-    @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 22px;
   }
 }
 
@@ -54,11 +48,22 @@
 
   &::placeholder {
     color: $default-color;
-    text-transform: uppercase;
   }
 
   &--textarea {
     padding-top: 6px;
     resize: none;
+  }
+
+  &:invalid {
+    outline: 2px solid $error-color;
+  }
+
+  &[type="email"]:invalid {
+    outline: 2px solid $error-color;
+  }
+
+  &[type="tel"]:invalid {
+    outline: 2px solid $error-color;
   }
 }
