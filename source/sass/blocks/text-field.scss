@@ -41,6 +41,7 @@
   text-transform: uppercase;
   border: 1px solid $style-gray-100;
   color: $default-color;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -50,20 +51,26 @@
     color: $default-color;
   }
 
+  &--error {
+    border-color: $error-color;
+    outline: 1px solid $error-color;
+  }
+
   &--textarea {
     padding-top: 6px;
     resize: none;
   }
 
-  &:invalid {
-    outline: 2px solid $error-color;
+  &:hover {
+    border-color: $input-hover;
   }
 
-  &[type="email"]:invalid {
-    outline: 2px solid $error-color;
+  &:active {
+    border-color: $default-color;
+    outline: 1px solid $default-color;
   }
 
-  &[type="tel"]:invalid {
-    outline: 2px solid $error-color;
+  &:focus {
+    border-color: $default-color;
   }
 }

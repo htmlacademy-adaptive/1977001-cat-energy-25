@@ -90,6 +90,9 @@
 
     @media (min-width: $desktop-width) {
       margin: 69px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
     }
   }
 

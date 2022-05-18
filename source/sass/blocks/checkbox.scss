@@ -30,12 +30,12 @@
 
 .checkbox__control {
   &:focus-visible + .checkbox__label {
-    outline: 2px solid $focus-color;
+    outline: 2px solid $default-color;
     outline-offset: 2px;
   }
 
   &:hover + .checkbox__label::before {
-    border: 1px solid $style-gray-hover;
+    border: 1px solid $radio-hover;
   }
 
   &:checked + .checkbox__label::before {
