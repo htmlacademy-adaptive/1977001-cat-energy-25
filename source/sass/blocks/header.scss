@@ -52,7 +52,19 @@
   margin-right: 58px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.header__logo-text {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

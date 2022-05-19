@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Каталог</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
 </head>
 
 <body class="page__body">
@@ -14,8 +20,12 @@
     <div class="header__container">
       <div class="header__wrapper">
         <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo/logo-image-mobile.svg" width="33" height="37"
-            alt="Логотип магазина «Кэт Энерджи».">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="header__logo-image" src="img/logo/logo-image-mobile.svg" width="33" height="37"
+              alt="Логотип магазина «Кэт Энерджи».">
+          </picture>
           <img class="header__logo-text" src="img/logo/logo-text.svg" width="101" height="18"
             alt="Магазин «Кэт Энерджи».">
         </a>
@@ -47,8 +57,13 @@
       <ul class="products-list list-reset">
         <li class="products-list__item product">
           <a class="product__image-link" href="#">
-            <img class="product__image" src="/img/products/pro500-chicken-mobile.png" width="68" height="86"
-              alt="Маленькая упаковка корма со вкусом курицы.">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="/img/products/pro500-chicken-tablet.png 1x, img/products/pro500-chicken-tablet@2x.png 2x">
+              <img class="product__image product__image--small" src="/img/products/pro500-chicken-mobile.png"
+                srcset="/img/products/pro500-chicken-mobile@2x.png" width="68" height="86"
+                alt="Маленькая упаковка корма со вкусом курицы.">
+            </picture>
           </a>
           <div class="product__info">
             <a class="product__title-link" href="#">
@@ -75,8 +90,15 @@
         </li>
         <li class="products-list__item product">
           <a class="product__image-link" href="#">
-            <img class="product__image" src="/img/products/pro1000-chicken-mobile.png" width="84" height="100"
-              alt="Большая упаковка корма со вкусом курицы.">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="/img/products/pro1000-chicken-desktop.png 1x, img/products/pro1000-chicken-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="/img/products/pro1000-chicken-tablet.png 1x, img/products/pro1000-chicken-tablet@2x.png 2x">
+              <img class="product__image product__image--large" src="/img/products/pro1000-chicken-mobile.png"
+                srcset="/img/products/pro1000-chicken-mobile@2x.png" width="84" height="100"
+                alt="Большая упаковка корма со вкусом курицы.">
+            </picture>
           </a>
           <div class="product__info">
             <a class="product__title-link" href="#">
@@ -103,8 +125,13 @@
         </li>
         <li class="products-list__item product">
           <a class="product__image-link" href="#">
-            <img class="product__image" src="/img/products/pro500-fish-mobile.png" width="68" height="86"
-              alt="Маленькая упаковка корма со вкусом рыбы.">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="/img/products/pro500-fish-tablet.png 1x, img/products/pro500-fish-tablet@2x.png 2x">
+              <img class="product__image product__image--small" src="/img/products/pro500-fish-mobile.png"
+                srcset="/img/products/pro500-fish-mobile@2x.png" width="68" height="86"
+                alt="Маленькая упаковка корма со вкусом рыбы.">
+            </picture>
           </a>
           <div class="product__info">
             <a class="product__title-link" href="#">
@@ -131,8 +158,15 @@
         </li>
         <li class="products-list__item product">
           <a class="product__image-link" href="#">
-            <img class="product__image" src="/img/products/pro1000-fish-mobile.png" width="84" height="100"
-              alt="Большая упаковка корма со вкусом рыбы.">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="/img/products/pro1000-fish-desktop.png 1x, img/products/pro1000-fish-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="/img/products/pro1000-fish-tablet.png 1x, img/products/pro1000-fish-tablet@2x.png 2x">
+              <img class="product__image product__image--large" src="/img/products/pro1000-fish-mobile.png"
+                srcset="/img/products/pro1000-fish-mobile@2x.png" width="84" height="100"
+                alt="Большая упаковка корма со вкусом рыбы.">
+            </picture>
           </a>
           <div class="product__info">
             <a class="product__title-link" href="#">
@@ -159,8 +193,13 @@
         </li>
         <li class="products-list__item product">
           <a class="product__image-link" href="#">
-            <img class="product__image" src="/img/products/slim500-buckwheat-mobile.png" width="68" height="86"
-              alt="Маленькая упаковка корма со вкусом гречи.">
+            <picture>
+              <source media="(min-width: 768px)"
+                srcset="/img/products/slim500-buckwheat-tablet.png 1x, img/products/slim500-buckwheat-tablet@2x.png 2x">
+              <img class="product__image product__image--small" src="/img/products/slim500-buckwheat-mobile.png"
+                srcset="/img/products/slim500-buckwheat-mobile@2x.png" width="68" height="86"
+                alt="Маленькая упаковка корма со вкусом гречи.">
+            </picture>
           </a>
           <div class="product__info">
             <a class="product__title-link" href="#">
@@ -187,8 +226,15 @@
         </li>
         <li class="products-list__item product">
           <a class="product__image-link" href="#">
-            <img class="product__image" src="/img/products/slim1000-buckwheat-mobile.png" width="84" height="100"
-              alt="Большая упаковка корма со вкусом гречи.">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="/img/products/slim1000-buckwheat-desktop.png 1x, img/products/slim1000-buckwheat-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="/img/products/slim1000-buckwheat-tablet.png 1x, img/products/slim1000-buckwheat-tablet@2x.png 2x">
+              <img class="product__image product__image--large" src="/img/products/slim1000-buckwheat-mobile.png"
+                srcset="/img/products/slim1000-buckwheat-mobile@2x.png" width="84" height="100"
+                alt="Большая упаковка корма со вкусом гречи.">
+            </picture>
           </a>
           <div class="product__info">
             <a class="product__title-link" href="#">
@@ -215,8 +261,13 @@
         </li>
         <li class="products-list__item product">
           <a class="product__image-link" href="#">
-            <img class="product__image" src="/img/products/slim500-rice-mobile.png" width="68" height="86"
-              alt="Маленькая упаковка корма со вкусом риса.">
+            <picture>
+              <source media="(min-width: 1280px)"
+                srcset="/img/products/slim500-rice-tablet.png 1x, img/products/slim500-rice-tablet@2x.png 2x">
+              <img class="product__image product__image--small" src="/img/products/slim500-rice-mobile.png"
+                srcset="/img/products/slim500-rice-mobile@2x.png" width="68" height="86"
+                alt="Маленькая упаковка корма со вкусом риса.">
+            </picture>
           </a>
           <div class="product__info">
             <a class="product__title-link" href="#">
