@@ -14,8 +14,12 @@
     <div class="header__container">
       <div class="header__wrapper">
         <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo/logo-image-mobile.svg" width="33" height="37"
-            alt="Логотип магазина «Кэт Энерджи».">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="img/logo/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+            <img class="header__logo-image" src="img/logo/logo-image-mobile.svg" width="33" height="37"
+              alt="Логотип магазина «Кэт Энерджи».">
+          </picture>
           <img class="header__logo-text" src="img/logo/logo-text.svg" width="101" height="18"
             alt="Магазин «Кэт Энерджи».">
         </a>
@@ -98,8 +102,7 @@
           <legend class="form__title form__title--comment title">Комментарий</legend>
           <p class="form__field text-field text-field--textarea">
             <label class="visually-hidden" for="comment">Комментарий</label>
-            <textarea class="text-field__input text-field__input--textarea title" id="comment" name="comment" rows="4"
-              placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="text-field__input text-field__input--textarea title" id="comment" name="comment" rows="4" placeholder="Расскажите обо всех повадках кота"></textarea>
           </p>
         </fieldset>
         <fieldset class="form__group form__group--extra">

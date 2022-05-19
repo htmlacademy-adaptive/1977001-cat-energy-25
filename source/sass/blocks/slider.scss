@@ -2,8 +2,21 @@
   text-align: center;
 }
 
-.slider__image--hidden {
-  display: none;
+.slider__image {
+  &--hidden {
+    display: none;
+  }
+
+  &--before {
+    @media (min-width: $tablet-width) {
+      width: auto;
+      height: 576px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 511px;
+    }
+  }
 }
 
 .slider__button {
