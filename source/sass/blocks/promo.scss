@@ -8,6 +8,8 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("/img/cat-bg-mobile@2x.jpg"), linear-gradient(to right, $background-green-start, $background-green-end);
+    background-repeat: no-repeat;
+    background-position: top center;
     background-size: auto 302px;
   }
 
@@ -104,7 +106,8 @@
   @media (min-width: $desktop-width) {
     width: 552px;
     height: 499px;
-    left: 470px;
+    left: calc(50% - 170px);
     top: -82px;
+    bottom: auto;
   }
 }
