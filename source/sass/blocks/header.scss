@@ -1,15 +1,15 @@
 .header {
   position: relative;
   width: 100%;
-  padding: 10px 20px 18px;
+  padding: 9px 20px 14px;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 30px 64px;
+    padding: 25px 30px 59px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 57px;
+    padding-top: 53px;
     padding-bottom: 74px;
   }
 
@@ -17,6 +17,16 @@
   &--index {
     @media (min-width: $desktop-width) {
       padding-bottom: 111px;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 73px;
     }
   }
 }
@@ -42,6 +52,15 @@
   display: flex;
   width: 60%;
   justify-content: space-between;
+  transition: 0.1s opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -49,11 +68,21 @@
 }
 
 .header__logo-image {
-  margin-right: 58px;
+  margin-right: 90px;
+  transition: 0.1s opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,6 +92,17 @@
 }
 
 .header__logo-text {
+  padding-top: 3px;
+  transition: 0.1s opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }

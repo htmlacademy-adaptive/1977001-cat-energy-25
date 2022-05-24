@@ -19,12 +19,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 80px;
+    padding-left: 37px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 83px;
+    margin-bottom: 77px;
+    padding-left: 0;
   }
 }
 

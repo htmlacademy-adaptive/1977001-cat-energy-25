@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,13 +17,15 @@
 }
 
 .site-list__item {
-  padding: 22px 20px 24px;
+  padding: 17px 20px 24px;
   border-top: 1px solid $style-gray-300;
 
   @media (min-width: $tablet-width) {
     border-top: none;
-    padding: 10px 0;
+    padding: 0;
+    margin-top: 8px;
     margin-right: 34px;
+    letter-spacing: -0.4px;
 
     &:last-child {
       margin-right: 0;
@@ -38,6 +40,11 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 7px;
+    margin-right: 46px;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &--active-index {
       border-bottom: 2px solid $basic-white;

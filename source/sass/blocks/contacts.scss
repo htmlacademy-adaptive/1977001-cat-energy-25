@@ -67,7 +67,7 @@
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 40px 56px;
+    padding: 60px 40px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,8 +115,10 @@
 
 .contacts__address {
   display: block;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -4px;
     margin-bottom: 20px;
     text-align: right;
   }

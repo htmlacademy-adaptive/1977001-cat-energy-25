@@ -1,6 +1,7 @@
 .gift {
   height: 289px;
   margin: 0 auto;
+  margin-bottom: 35px;
   max-width: 707px;
   padding-top: 59px;
   color: $basic-white;
@@ -25,6 +26,11 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0;
   }
@@ -46,7 +52,7 @@
 }
 
 .gift__image {
-  margin-bottom: 48px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -64,4 +70,12 @@
   padding: 0;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }

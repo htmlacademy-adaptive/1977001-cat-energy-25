@@ -12,11 +12,13 @@ $style-gray-100: #ebebeb;
 $style-gray-200: #eaeaea;
 $style-gray-300: #e6e6e6;
 $style-gray-400: #d9d9d9;
+$style-gray-450: #cdcdcd;
 $style-gray-500: #444444;
 $style-gray-600: #222222;
 
 $radio-hover: #bababa;
-$input-hover: #cdcdcd;
+$icon-color: #666666;
+$input-hover: $style-gray-450;
 $error-color: #ff8282;
 
 $accent-color: $basic-green;

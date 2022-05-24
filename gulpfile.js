@@ -161,8 +161,7 @@ export default gulp.series(
     styles,
     scripts,
     svg,
-    sprite,
-    createWebp
+    sprite
   ),
   gulp.series(
     server,

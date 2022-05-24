@@ -14,4 +14,15 @@
 
 .social__link {
   padding: 10px 0;
+  color: $icon-color;
+  transition: 0.1s color;
+
+  &:hover,
+  &:focus-visible {
+    color: $basic-green;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
