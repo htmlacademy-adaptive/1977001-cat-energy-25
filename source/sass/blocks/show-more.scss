@@ -15,7 +15,9 @@
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 77px;
+    margin-bottom: 47px;
+    width: 60px;
+    height: auto;
   }
 }
 

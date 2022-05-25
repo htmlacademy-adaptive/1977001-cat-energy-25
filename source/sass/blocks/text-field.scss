@@ -2,7 +2,7 @@
   display: flex;
   height: 52px;
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 7px;
   align-items: center;
 
   &:last-child {
@@ -11,6 +11,11 @@
 
   &--textarea {
     height: 100%;
+
+    &:focus {
+      border-color: $default-color;
+      outline: 1px solid $default-color;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -19,6 +24,15 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 22px;
+  }
+
+  &--icon {
+    position: relative;
+
+    svg {
+      position: absolute;
+      right: 14px;
+    }
   }
 }
 
@@ -36,7 +50,7 @@
 
 .text-field__input {
   width: 100%;
-  padding: 11px 15px;
+  padding: 11px 21px;
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid $style-gray-100;
@@ -56,21 +70,33 @@
     outline: 1px solid $error-color;
   }
 
+  &--error + svg {
+    color: $error-color;
+  }
+
   &--textarea {
-    padding-top: 6px;
+    padding: 6px 13px 25px;
     resize: none;
+
+    @media (min-width: $tablet-width) {
+      padding: 6px 18px 21px;
+    }
   }
 
   &:hover {
     border-color: $input-hover;
   }
 
-  &:active {
+  &:focus {
     border-color: $default-color;
     outline: 1px solid $default-color;
   }
 
-  &:focus {
-    border-color: $default-color;
+  &:focus + svg {
+    color: $basic-green;
+  }
+
+  &--icon {
+    padding-right: 50px;
   }
 }

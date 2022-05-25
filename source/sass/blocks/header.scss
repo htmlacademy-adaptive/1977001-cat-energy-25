@@ -1,15 +1,15 @@
 .header {
   position: relative;
   width: 100%;
-  padding: 10px 20px 18px;
+  padding: 9px 20px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 30px 64px;
+    padding: 25px 30px 59px;
     border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 57px;
+    padding-top: 53px;
     padding-bottom: 74px;
   }
 
@@ -19,12 +19,36 @@
       padding-bottom: 111px;
     }
   }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 73px;
+    }
+  }
 }
 
 .header__container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.header__container--nojs .header__nav {
+  position: relative;
+  display: block;
+}
+
+.header__container--nojs .header__nav-toggle {
+  display: none;
 }
 
 .header__wrapper {
@@ -32,9 +56,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    padding-bottom: 0;
   }
 }
 
@@ -42,6 +68,15 @@
   display: flex;
   width: 60%;
   justify-content: space-between;
+  transition: 0.1s opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -49,11 +84,21 @@
 }
 
 .header__logo-image {
-  margin-right: 58px;
+  margin-right: 90px;
+  transition: 0.1s opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     width: 174px;
     height: 52px;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,6 +108,17 @@
 }
 
 .header__logo-text {
+  padding-top: 3px;
+  transition: 0.1s opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -145,14 +201,27 @@
 }
 
 .header__nav {
+  position: absolute;
   z-index: 1;
+  left: 0;
+  right: 0;
+  top: 100%;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: block;
+    position: relative;
+    width: auto;
   }
 
   &--opened {
     display: flex;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    width: 100%;
   }
 
   &--closed {
@@ -162,18 +231,9 @@
       display: block;
     }
   }
-
-  &--nojs {
-    display: flex;
-  }
 }
 
 .header__nav-list {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-
   @media (min-width: $tablet-width) {
     position: static;
     display: flex;

@@ -2,13 +2,14 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    margin-bottom: 86px;
   }
 }
 
@@ -22,7 +23,7 @@
   }
 
   &--bio {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 72px;
@@ -37,7 +38,7 @@
   &--needs {
     position: relative;
     display: flex;
-    padding: 25px 0 16px;
+    padding: 21px 0 16px;
     margin-bottom: 27px;
     align-items: center;
 
@@ -82,14 +83,15 @@
 
   &--contacts {
     position: relative;
-    margin-bottom: 43px;
+    margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 65px;
     }
 
     @media (min-width: $desktop-width) {
-      margin: 69px 0;
+      margin-top: 69px;
+      margin-bottom: 42px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 80px;
@@ -109,7 +111,11 @@
     margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 54px;
+      margin-bottom: 52px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
     }
   }
 }
@@ -122,7 +128,7 @@
   line-height: 26px;
 
   &--contacts {
-    margin-bottom: 35px;
+    margin-bottom: 29px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 76px;
@@ -137,7 +143,7 @@
     margin-bottom: 37px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 76px;
+      margin-bottom: 81px;
     }
   }
 
@@ -145,7 +151,7 @@
     margin-bottom: 34px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 57px;
+      margin-bottom: 54px;
     }
   }
 
@@ -158,7 +164,7 @@
 
 .form__radio-item {
   color: $default-color;
-  margin-bottom: 24px;
+  margin-bottom: 7px;
 
   &:last-child {
     margin-bottom: 0;
@@ -171,7 +177,6 @@
 
 .form__submit-container {
   text-align: center;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -189,7 +194,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 123px;
+    column-gap: 58px;
     row-gap: 32px;
   }
 
@@ -200,7 +205,7 @@
 }
 
 .form__checkbox {
-  margin-bottom: 12px;
+  margin-bottom: 2px;
 
   &:last-child {
     margin-bottom: 0;
@@ -216,6 +221,7 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
+    margin-bottom: 0;
     padding: 14px 45px;
     font-size: 20px;
     line-height: 20px;
@@ -224,4 +230,8 @@
 
 .form__note {
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 15px;
+  }
 }

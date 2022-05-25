@@ -7,13 +7,25 @@
 .copyright__text {
   font-size: 16px;
   line-height: 18px;
+  margin-top: 6px;
 
   @media (min-width: $tablet-width) {
     display: block;
     margin-right: 22px;
+    margin-top: 13px;
   }
 }
 
 .copyright__link {
-  color: inherit;
+  color: $icon-color;
+  transition: 0.1s color;
+
+  &:hover,
+  &:focus-visible {
+    color: $basic-green;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }

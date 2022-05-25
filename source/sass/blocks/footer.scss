@@ -4,12 +4,12 @@
 }
 
 .footer__container {
-  padding-top: 39px;
+  padding-top: 40px;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    padding-top: 58px;
+    padding-top: 52px;
     padding-bottom: 55px;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +18,17 @@
 
 .footer__logo {
   display: block;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
   text-align: center;
+  transition: 0.1s opacity;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -28,10 +37,11 @@
 }
 
 .footer__social {
-  padding: 20px 0;
+  padding: 18px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    padding-left: 24px;
   }
 }
 

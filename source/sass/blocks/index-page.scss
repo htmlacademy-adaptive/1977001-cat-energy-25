@@ -10,7 +10,13 @@
       background-position: right center, center;
       width: 50%;
       height: 694px;
-      max-width: 1440px;
+      max-width: 720px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/img/cat-bg-desktop@2x.jpg"), linear-gradient(#64a73c, #64a73c);
+        background-size: cover;
+        width: 50%;
+      }
     }
   }
 }

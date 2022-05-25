@@ -1,5 +1,5 @@
 .catalog-page {
-  padding-top: 27px;
+  padding-top: 29px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -15,5 +15,13 @@
     margin-bottom: 82px;
     font-size: 60px;
     line-height: 60px;
+  }
+}
+
+.catalog-page__container {
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
   }
 }
