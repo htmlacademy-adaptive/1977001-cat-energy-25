@@ -1,7 +1,8 @@
+const header = document.querySelector('.header__container');
 const navHeader = document.querySelector('.header__nav');
 const navToggle = document.querySelector('.header__nav-toggle');
 
-navHeader.classList.remove('header__nav--nojs');
+header.classList.remove('header__container--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navHeader.classList.contains('header__nav--closed')) {

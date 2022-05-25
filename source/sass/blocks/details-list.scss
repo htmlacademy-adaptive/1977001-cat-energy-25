@@ -38,6 +38,7 @@
   line-height: 12px;
   text-align: center;
   background-color: $background-color;
+  order: 1;
 
   @media (min-width: $tablet-width) {
     padding: 0 8px;
