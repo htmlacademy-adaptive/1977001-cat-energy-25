@@ -110,7 +110,10 @@
 }
 
 .slider__toggle {
+  display: none;
+
   @media (min-width: $tablet-width) {
+    display: block;
     position: absolute;
     width: 34px;
     height: 34px;
@@ -141,6 +144,12 @@
     &:active {
       border: 1px solid $basic-green;
       box-shadow: 0 3px 5px rgba($basic-black, 0.16);
+    }
+
+    &:focus-visible {
+      border: 1px solid $basic-green;
+      outline: 2px solid $default-color;
+      outline-offset: 2px;
     }
   }
 }
