@@ -1,8 +1,8 @@
 .form {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 54px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -39,7 +39,7 @@
     position: relative;
     display: flex;
     padding: 21px 0 16px;
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     align-items: center;
 
     &::before {
@@ -91,10 +91,10 @@
 
     @media (min-width: $desktop-width) {
       margin-top: 69px;
-      margin-bottom: 42px;
+      margin-bottom: 44px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 80px;
+      column-gap: 80px;
     }
   }
 
@@ -108,10 +108,10 @@
   }
 
   &--extra {
-    margin-bottom: 34px;
+    margin-bottom: 32px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 52px;
+      margin-bottom: 54px;
     }
 
     @media (min-width: $tablet-width) {
@@ -127,6 +127,12 @@
   font-size: 24px;
   line-height: 26px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
   &--contacts {
     margin-bottom: 29px;
 
@@ -135,7 +141,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 35px;
+      margin-bottom: 80px;
     }
   }
 
@@ -143,22 +149,16 @@
     margin-bottom: 37px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 81px;
+      margin-bottom: 76px;
     }
   }
 
   &--extra {
-    margin-bottom: 34px;
+    margin-bottom: 37px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 54px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
-    font-size: 36px;
-    line-height: 36px;
   }
 }
 
@@ -205,7 +205,7 @@
 }
 
 .form__checkbox {
-  margin-bottom: 2px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-bottom: 0;
@@ -222,7 +222,7 @@
   @media (min-width: $tablet-width) {
     width: auto;
     margin-bottom: 0;
-    padding: 14px 45px;
+    padding: 15px 45px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -230,8 +230,10 @@
 
 .form__note {
   text-align: left;
+  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
     padding-top: 15px;
+    margin-left: 0;
   }
 }
