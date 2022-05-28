@@ -44,6 +44,7 @@
   color: $default-color;
 
   @media (min-width: $tablet-width) {
+    margin-right: 19px;
     font-size: 20px;
   }
 }
@@ -79,7 +80,7 @@
     resize: none;
 
     @media (min-width: $tablet-width) {
-      padding: 6px 18px 21px;
+      padding: 10px 14px 14px;
     }
   }
 

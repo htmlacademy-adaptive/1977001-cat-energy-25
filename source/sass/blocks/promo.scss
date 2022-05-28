@@ -48,6 +48,7 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -56,6 +57,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 40%;
     margin-bottom: 40px;
   }
 }
@@ -73,6 +75,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 40%;
     margin-bottom: 51px;
   }
 }

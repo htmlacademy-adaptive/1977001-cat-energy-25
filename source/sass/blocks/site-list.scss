@@ -8,6 +8,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 36px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,7 +21,6 @@
 .site-list__item {
   padding: 22px 20px 24px;
   position: relative;
-  // border-top: 1px solid $style-gray-300;
 
   &::before {
     content: "";
@@ -36,15 +36,15 @@
     border-top: none;
     padding: 0;
     margin-top: 8px;
-    margin-right: 34px;
+    margin-left: 34px;
     letter-spacing: -0.4px;
 
     &::before {
       display: none;
     }
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
 
     &--active,
@@ -56,10 +56,10 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 7px;
-    margin-right: 46px;
+    margin-left: 44px;
 
-    &:last-child {
-      margin-right: 0;
+    &:first-child {
+      margin-left: 0;
     }
 
     &--active-index {
