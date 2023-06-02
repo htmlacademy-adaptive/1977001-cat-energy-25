@@ -15,7 +15,7 @@
 .social__link {
   padding: 10px 0;
   color: $icon-color;
-  transition: 0.1s color;
+  transition: all 0.2s ease-out;
 
   &:hover,
   &:focus-visible {

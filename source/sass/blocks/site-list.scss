@@ -70,6 +70,8 @@
 }
 
 .site-list__link {
+  transition: all 0.2s ease-out;
+
   @media (max-width: $tablet-width) {
     font-weight: 500;
   }

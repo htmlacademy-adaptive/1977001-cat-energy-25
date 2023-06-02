@@ -17,8 +17,14 @@
 }
 
 .copyright__link {
+  display: flex;
   color: $icon-color;
-  transition: 0.1s color;
+  transition: all 0.2s ease-out;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    justify-content: space-between;
+  }
 
   &:hover,
   &:focus-visible {
